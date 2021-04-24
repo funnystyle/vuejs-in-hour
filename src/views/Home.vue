@@ -15,6 +15,12 @@ export default {
       input1: "abcd",
     };
   },
+  watch: {
+    input1(val) {
+      console.log(this.input1);
+      console.log(val);
+    },
+  },
   methods: {
     getData() {
       alert(this.input1);
