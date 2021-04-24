@@ -16,9 +16,8 @@ export default {
     };
   },
   watch: {
-    input1(val) {
+    input1() {
       console.log(this.input1);
-      console.log(val);
     },
   },
   methods: {
