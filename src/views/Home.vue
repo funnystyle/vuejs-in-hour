@@ -9,7 +9,7 @@
       <option :key="i" :value="d.v" v-for="(d, i) in options">{{ d.t }}</option>
     </select>
 
-    <table class="table table-bordere" v-if="tableShow">
+    <table class="table table-bordere" v-show="tableShow">
       <tr :key="i" v-for="(d, i) in options">
         <td>{{ d.v }}</td>
         <td>{{ d.t }}</td>
@@ -30,7 +30,7 @@ export default {
         { v: "B", t: "Busan" },
       ],
       region: "B",
-      tableShow: true,
+      tableShow: false,
     };
   },
   watch: {
